@@ -12,7 +12,6 @@ class Main extends React.Component {
 					<div id="header" className="container">
 
 						<h1 id="logo"><a href="#">Globart</a></h1>
-
 						<NavBar></NavBar>
 						<div>
 							<nav id="nav">
@@ -86,13 +85,13 @@ class Main extends React.Component {
 								</p>
 							</section>
 							<section className="col-md-4 col-sm-12 feature">
-								<p>Here you can increase your art collection or 
-									sell pieces of art that you have lost interest 
+								<p>Here you can increase your art collection or
+									sell pieces of art that you have lost interest
 									in and that someone may be willing to have.</p>
 							</section>
 							<section className="col-md-4 col-sm- 12feature">
-								<p>Would you like to buy a piece of art for your museum but 
-									you have no money at the moment? Here you can check if 
+								<p>Would you like to buy a piece of art for your museum but
+									you have no money at the moment? Here you can check if
 									there is anyone willing to lend.
 								</p>
 							</section>
