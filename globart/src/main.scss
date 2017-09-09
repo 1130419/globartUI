@@ -3,6 +3,7 @@
 @import 'libs/mixins';
 //@import url("font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600");
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
 
 /*
 	Telephasic by HTML5 UP
@@ -45,6 +46,11 @@
 			)
 		)
 	));
+
+/* Custom */
+$main-color-primary: rgba( 70,136,222,1);
+$main-color-1: rgba(116,172,243,1);
+$main-color-2: rgba( 34, 97,178,1);
 
 /* Basic */
 
@@ -178,7 +184,7 @@
 
 		> p {
 			display: block;
-			color: #f35858;
+			color: $main-color-1;
 			padding: 0.75em 0 1em 0;
 			font-size: 1.5em;
 			line-height: 1.5em;
@@ -420,30 +426,6 @@
 		}
 	}
 
-/* Button */
-
-	input[type="button"],
-	input[type="submit"],
-	input[type="reset"],
-	button,
-	.button {
-		@include vendor('transition', ('color 0.25s ease-in-out', 'border-color 0.25s ease-in-out', 'background-color 0.25s ease-in-out'));
-		display: inline-block;
-		color: inherit;
-		background: none;
-		text-decoration: none;
-		border: solid 1px #c2c7cc;
-		border-radius: 0.35em;
-		padding: 0.8em 2em 0.8em 2em;
-		cursor: pointer;
-		outline: 0;
-
-		&:hover {
-			color: #f35858;
-			border-color: rgba(243, 88, 88, 0.5);
-		}
-	}
-
 /* Icons */
 
 	.icon {
@@ -502,27 +484,14 @@
 	#header-wrapper {
 		position: relative;
 		padding: 4em 0 2em 0;
-		background-image: url('images/header.svg');
-		@include vendor('background-image', ('url("images/overlay.png")', 'url("images/header.svg")', 'linear-gradient(75deg, #FF7088 15%, #F2B69D 55%)'));
-		background-color: #f08c89;
-		background-size: 100% 620%;
-		background-size: 128px 128px, 100% 620%, auto;
-		background-repeat: repeat, no-repeat, no-repeat;
+		background-image: url('https://uploads3.wikiart.org/00142/images/vincent-van-gogh/the-starry-night.jpg');
+		background-repeat: no-repeat;
+		background-color: transparent;
+		background-size: cover;
 	}
 
 	.homepage #header-wrapper {
 		padding: 10em 0 6em 0;
-		background-size: 128px 128px, 100% 100%, auto;
-	}
-
-	#promo-wrapper {
-		position: relative;
-		background-image: url('images/overlay.png')/*, url('../../images/promo.jpg')*/;
-		background-size: 192px 192px, cover;
-		background-position: top left, center center;
-		color: #fff;
-		text-align: center;
-		padding: 6em 0 6em 0;
 	}
 
 	#footer-wrapper {
@@ -715,18 +684,17 @@
 		}
 
 		.button {
-			background: #fff;
-			border-color: rgba(255, 255, 255, 0);
-			color: #f08c89;
-			font-size: 1.25em;
+			color: $main-color-2;
+			background: rgba(255, 255, 255, 0.9);
+			border: solid 1px #c2c7cc;
 
 			&:hover {
-				border-color: rgba(255, 255, 255, 0.75);
-				background-color: rgba(255, 255, 255, 0.15);
-				color: #fff;
+				color: rgba(255, 255, 255, 0.75);
+				background-color: transparent;
+				border-color: rgb(255,255,255);
 			}
 		}
-
+		/*
 		a {
 			color: #fff;
 			border-color: #fff;
@@ -735,7 +703,7 @@
 			&:hover {
 				border-color: rgba(255, 255, 255, 0);
 			}
-		}
+		}*/
 	}
 
 /* Promo */
@@ -757,9 +725,9 @@
 		}
 
 		.button {
-			background: #fff;
-			border-color: rgba(255, 255, 255, 0);
-			color: #27636B;
+			color: $main-color-2;
+			background: rgba(255, 255, 255, 0.9);
+			border: solid 1px #c2c7cc;
 			font-size: 1.25em;
 
 			&:hover {
@@ -808,13 +776,14 @@
 /* Copyright */
 
 	#copyright {
+
 		position: relative;
 		z-index: 1;
 		text-align: center;
 		border-top: solid 1px #d2d7dc;
 		color: #a2a7ac;
-		padding-top: 4em;
-		margin-top: 6em;
+		padding-top: 2.5em;
+    	margin-top: 2em;
 	}
 
 /* Normal */
@@ -846,12 +815,8 @@
 				padding: 8em 0 4em 0;
 			}
 
-			#promo-wrapper {
-				padding: 5em 0 5em 0;
-			}
-
 			#footer-wrapper {
-				padding: 5em 0 5em 0;
+				padding: 2.5em 0 1em 0;
 			}
 
 	}
@@ -891,10 +856,6 @@
 
 			.homepage #header-wrapper {
 				padding: 5em 0 4em 0;
-			}
-
-			#promo-wrapper {
-				padding: 2em;
 			}
 
 			#footer-wrapper {
@@ -1151,10 +1112,6 @@
 
 			.homepage #header-wrapper {
 				padding: 3em 20px 3em 20px;
-			}
-
-			#promo-wrapper {
-				padding: 20px;
 			}
 
 			#footer-wrapper {
@@ -1491,4 +1448,29 @@
 				}
 			}
 
+	}
+
+/* Button */
+
+	input[type="button"],
+	input[type="submit"],
+	input[type="reset"],
+	button,
+	.button {
+		@include vendor('transition', ('color 0.25s ease-in-out', 'border-color 0.25s ease-in-out', 'background-color 0.25s ease-in-out'));
+		display: inline-block;
+		color: inherit;
+		background: none;
+		border: solid 1px #c2c7cc;
+		text-decoration: none;
+		border-radius: 0.35em;
+		padding: 0.8em 2em 0.8em 2em;
+		cursor: pointer;
+		outline: 0;
+
+		&:hover {
+			color: $main-color-1;
+			background-color: transparent;
+			border-color: lighten($main-color-1, 10%); 
+		}
 	}

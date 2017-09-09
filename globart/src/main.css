@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600");
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
 /*
 	Telephasic by HTML5 UP
 	html5up.net | @ajlkn
@@ -963,6 +964,7 @@ body {
   .\-1u\28mobilep\29 {
     margin-left: 8.3333333333%; } }
 
+/* Custom */
 /* Basic */
 @-ms-viewport {
   width: device-width; }
@@ -1074,7 +1076,7 @@ header {
   margin-bottom: 1.5em; }
   header > p {
     display: block;
-    color: #f35858;
+    color: #74acf3;
     padding: 0.75em 0 1em 0;
     font-size: 1.5em;
     line-height: 1.5em; }
@@ -1239,33 +1241,6 @@ table {
     table.default tfoot {
       border-top: solid 1px #D2D7DC; }
 
-/* Button */
-input[type="button"],
-input[type="submit"],
-input[type="reset"],
-button,
-.button {
-  -moz-transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
-  -webkit-transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
-  -ms-transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
-  transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
-  display: inline-block;
-  color: inherit;
-  background: none;
-  text-decoration: none;
-  border: solid 1px #c2c7cc;
-  border-radius: 0.35em;
-  padding: 0.8em 2em 0.8em 2em;
-  cursor: pointer;
-  outline: 0; }
-  input[type="button"]:hover,
-  input[type="submit"]:hover,
-  input[type="reset"]:hover,
-  button:hover,
-  .button:hover {
-    color: #f35858;
-    border-color: rgba(243, 88, 88, 0.5); }
-
 /* Icons */
 .icon {
   text-decoration: none; }
@@ -1309,28 +1284,13 @@ button,
 #header-wrapper {
   position: relative;
   padding: 4em 0 2em 0;
-  background-image: url("images/header.svg");
-  background-image: url("images/overlay.png"), url("images/header.svg"), -moz-linear-gradient(75deg, #FF7088 15%, #F2B69D 55%);
-  background-image: url("images/overlay.png"), url("images/header.svg"), -webkit-linear-gradient(75deg, #FF7088 15%, #F2B69D 55%);
-  background-image: url("images/overlay.png"), url("images/header.svg"), -ms-linear-gradient(75deg, #FF7088 15%, #F2B69D 55%);
-  background-image: url("images/overlay.png"), url("images/header.svg"), linear-gradient(75deg, #FF7088 15%, #F2B69D 55%);
-  background-color: #f08c89;
-  background-size: 100% 620%;
-  background-size: 128px 128px, 100% 620%, auto;
-  background-repeat: repeat, no-repeat, no-repeat; }
+  background-image: url("https://uploads3.wikiart.org/00142/images/vincent-van-gogh/the-starry-night.jpg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: cover; }
 
 .homepage #header-wrapper {
-  padding: 10em 0 6em 0;
-  background-size: 128px 128px, 100% 100%, auto; }
-
-#promo-wrapper {
-  position: relative;
-  background-image: url("images/overlay.png");
-  background-size: 192px 192px, cover;
-  background-position: top left, center center;
-  color: #fff;
-  text-align: center;
-  padding: 6em 0 6em 0; }
+  padding: 10em 0 6em 0; }
 
 #footer-wrapper {
   -webkit-transform: translate3d(0, 0, 0);
@@ -1447,7 +1407,17 @@ button,
   position: relative;
   color: #fff;
   text-align: center;
-  z-index: 1; }
+  z-index: 1;
+  /*
+		a {
+			color: #fff;
+			border-color: #fff;
+			border-color: rgba(255, 255, 255, 0.5);
+
+			&:hover {
+				border-color: rgba(255, 255, 255, 0);
+			}
+		}*/ }
   #hero h2 {
     color: #fff;
     font-size: 3em; }
@@ -1459,20 +1429,13 @@ button,
     font-size: 1.5em;
     line-height: 1.5em; }
   #hero .button {
-    background: #fff;
-    border-color: rgba(255, 255, 255, 0);
-    color: #f08c89;
-    font-size: 1.25em; }
+    color: #2261b2;
+    background: rgba(255, 255, 255, 0.9);
+    border: solid 1px #c2c7cc; }
     #hero .button:hover {
-      border-color: rgba(255, 255, 255, 0.75);
-      background-color: rgba(255, 255, 255, 0.15);
-      color: #fff; }
-  #hero a {
-    color: #fff;
-    border-color: #fff;
-    border-color: rgba(255, 255, 255, 0.5); }
-    #hero a:hover {
-      border-color: rgba(255, 255, 255, 0); }
+      color: rgba(255, 255, 255, 0.75);
+      background-color: transparent;
+      border-color: white; }
 
 /* Promo */
 #promo {
@@ -1489,9 +1452,9 @@ button,
     margin-right: 1em;
     font-size: 1.75em; }
   #promo .button {
-    background: #fff;
-    border-color: rgba(255, 255, 255, 0);
-    color: #27636B;
+    color: #2261b2;
+    background: rgba(255, 255, 255, 0.9);
+    border: solid 1px #c2c7cc;
     font-size: 1.25em; }
     #promo .button:hover {
       border-color: rgba(255, 255, 255, 0.75);
@@ -1526,8 +1489,8 @@ button,
   text-align: center;
   border-top: solid 1px #d2d7dc;
   color: #a2a7ac;
-  padding-top: 4em;
-  margin-top: 6em; }
+  padding-top: 2.5em;
+  margin-top: 2em; }
 
 /* Normal */
 @media screen and (max-width: 1280px) {
@@ -1544,10 +1507,8 @@ button,
     padding: 2em 0 2em 0; }
   .homepage #header-wrapper {
     padding: 8em 0 4em 0; }
-  #promo-wrapper {
-    padding: 5em 0 5em 0; }
   #footer-wrapper {
-    padding: 5em 0 5em 0; } }
+    padding: 2.5em 0 1em 0; } }
 
 /* Narrow */
 @media screen and (max-width: 1080px) {
@@ -1569,8 +1530,6 @@ button,
     padding: 5em 0 1em 0; }
   .homepage #header-wrapper {
     padding: 5em 0 4em 0; }
-  #promo-wrapper {
-    padding: 2em; }
   #footer-wrapper {
     padding: 4em 2em 4em 2em; }
   /* Header */
@@ -1697,8 +1656,6 @@ button,
     text-align: center; }
   .homepage #header-wrapper {
     padding: 3em 20px 3em 20px; }
-  #promo-wrapper {
-    padding: 20px; }
   #footer-wrapper {
     padding: 3em 20px 3em 20px; }
   /* Header */
@@ -1933,3 +1890,31 @@ button,
   /* Footer */
   #footer header.major {
     margin-bottom: 1em; } }
+
+/* Button */
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button,
+.button {
+  -moz-transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+  -webkit-transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+  -ms-transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+  transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+  display: inline-block;
+  color: inherit;
+  background: none;
+  border: solid 1px #c2c7cc;
+  text-decoration: none;
+  border-radius: 0.35em;
+  padding: 0.8em 2em 0.8em 2em;
+  cursor: pointer;
+  outline: 0; }
+  input[type="button"]:hover,
+  input[type="submit"]:hover,
+  input[type="reset"]:hover,
+  button:hover,
+  .button:hover {
+    color: #74acf3;
+    background-color: transparent;
+    border-color: #a3c8f7; }
