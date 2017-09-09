@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom';
-import '../../main.css';
-import '../../index.css';
+import '../../index';
+import '../../App';
 import NavBar from '../Global/navBar';
 
 class Main extends React.Component {
@@ -13,20 +13,7 @@ class Main extends React.Component {
 
 						<h1 id="logo"><a href="#">Globart</a></h1>
 						<NavBar></NavBar>
-						<div>
-							<nav id="nav">
-								<ul>
-									<li>
-										<a href="#">Vendas</a>
-									</li>
-									{/* < <li><a href="left-sidebar.html">Left Sidebar</a></li> */}
-									<li className="break">
-										<a href="#">Compras</a>
-									</li>
-									{/* <li><a href="no-sidebar.html">Compras</a></li> */}
-								</ul>
-							</nav>
-						</div>
+						
 					</div>
 
 					<section id="hero" className="container">

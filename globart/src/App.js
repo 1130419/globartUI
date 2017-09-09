@@ -1,17 +1,22 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import { Switch, Route } from 'react-router-dom'
 import './App.scss';
 import NavBar from './Components/Global/navBar';
-import Main from './Components/Main/main';
+import Home from './Components/Main/main';
+import Sell from './Components/Sell/sell';
+import Buy from './Components/Buy/buy';
 
-class App extends Component {
-    render() {
-        return (
-            <div>
-                <Main></Main>
-            </div>
-        );
-    }
-}
 
-export default App;
+
+const App = () => (
+    <main>
+        <Switch>
+            <Route exact path='/' component={Home} />
+            <Route path='/sell' component={Sell} />
+            <Route path='/buy' component={Buy} />
+        </Switch>
+    </main>
+)
+
+export default App
