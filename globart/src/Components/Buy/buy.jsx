@@ -1,4 +1,6 @@
-class Buy  extends Component {
+import React, {Component} from 'react'
+
+class Buy extends Component {
     state = {  }
     render() {
         return (
