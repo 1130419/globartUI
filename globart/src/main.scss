@@ -476,7 +476,7 @@ $main-color-2: rgba( 34, 97,178,1);
 				top: 0;
 				z-index: 1;
 				box-shadow: inset 0px 0px 0px 1px #e8e8e8;
-				background: #f6f8fb url('images/image-wrapper.svg');
+				background-color: #f6f8fb;
 			}
 		}
 	}
@@ -678,7 +678,6 @@ $main-color-2: rgba( 34, 97,178,1);
 				color: #fff;
 			}
 		}
-
 
 		p {
 			font-size: 1.5em;
@@ -1240,7 +1239,6 @@ $main-color-2: rgba( 34, 97,178,1);
 				@include vendor('backface-visibility', 'hidden');
 				@include vendor('transform', 'translateY(#{_size(navPanel) * -1})');
 				@include vendor('transition', ('transform #{_duration(navPanel)} ease'));
-				@include vendor('background-image', ('url("images/overlay.png")', 'url("images/navPanel.svg")', 'linear-gradient(top, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.25))'));
 				display: block;
 				left: 0;
 				overflow-y: auto;
