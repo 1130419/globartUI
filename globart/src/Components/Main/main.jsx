@@ -31,15 +31,15 @@ class Main extends React.Component {
 					</div>
 
 					<section id="hero" className="container">
-						<p>Designed and built on <strong>skel</strong> by AJ. Released for free under
-					<br /> the Creative Commons Attribution 3.0 license.</p>
+						<p><i>"Art washes away from the soul <br />the dust of everyday life"</i></p>
+						<div>Pablo Picasso</div>
 						<ul className="actions">
-							<li><a href="#" className="button">Get this party started</a></li>
+							<li><a href="#" className="button">Show me art</a></li>
 						</ul>
 					</section>
 				</div>
 
-				<div className="wrapper">
+				{/* <div className="wrapper">
 					<div className="container">
 						<div id="root"></div>
 						<div className="row">
@@ -71,52 +71,43 @@ class Main extends React.Component {
 							</section>
 						</div>
 					</div>
-				</div>
+				</div> */}
 
 				<div className="wrapper">
 					<section className="container">
 						<header className="major">
-							<h2>Sed magna consequat lorem curabitur tempus</h2>
-							<p>Elit aliquam vulputate egestas euismod nunc semper vehicula lorem blandit</p>
+							<h2>We specialize in mediation of pieces of art.</h2>
 						</header>
 						<div className="row features">
 							<section className="4u 12u(narrower) feature">
-								<div className="image-wrapper first">
-									<a href="#" className="image featured"><img src="images/pic03.jpg" alt="" /></a>
-								</div>
-								<p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur vel sem sit dolor neque semper magna lorem
-							ipsum.
-						</p>
+								<p>We are sure that you are a talented artist.
+									Here you can present your paintings to the world and who knows how to put
+									your work of art in a world-class museum.
+								</p>
 							</section>
 							<section className="4u 12u(narrower) feature">
-								<div className="image-wrapper">
-									<a href="#" className="image featured"><img src="images/pic04.jpg" alt="" /></a>
-								</div>
-								<p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur vel sem sit dolor neque semper magna lorem
-							ipsum.
-						</p>
+								<p>Here you can increase your art collection or 
+									sell pieces of art that you have lost interest 
+									in and that someone may be willing to have.</p>
 							</section>
 							<section className="4u 12u(narrower) feature">
-								<div className="image-wrapper">
-									<a href="#" className="image featured"><img src="images/pic05.jpg" alt="" /></a>
-								</div>
-								<p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur vel sem sit dolor neque semper magna lorem
-							ipsum.
-						</p>
+								<p>Would you like to buy a piece of art for your museum but 
+									you have no money at the moment? Here you can check if 
+									there is anyone willing to lend.
+								</p>
 							</section>
 						</div>
-						<ul className="actions major">
+						{/* <ul className="actions major">
 							<li><a href="#" className="button">Elevate my awareness</a></li>
-						</ul>
+						</ul> */}
 					</section>
 				</div>
 
 				<div id="footer-wrapper">
 					<div id="footer" className="container">
 						<header className="major">
-							<h2>Euismod aliquam vehicula lorem</h2>
-							<p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur vel sem sit<br /> dolor neque semper magna
-						lorem ipsum feugiat veroeros lorem ipsum dolore.</p>
+							<h2>Do you still have questions?</h2>
+							<p> If after reading all the explanations you still have doubts, you can always ask. We are happy to help.</p>
 						</header>
 						<div className="row">
 							<section className="12u">
@@ -138,13 +129,13 @@ class Main extends React.Component {
 										<div className="12u">
 											<ul className="actions text-center">
 												<li><input type="submit" value="Send Message" /></li>
-												<li><input type="reset" value="Clear form" /></li>
+												<li><input type="reset" value="Clean" /></li>
 											</ul>
 										</div>
 									</div>
 								</form>
 							</section>
-							<section className="12u hide">
+							{/* <section className="12u hide">
 								<div className="row 0%">
 									<ul className="divided icons 6u 12u(mobile)">
 										<li className="icon fa-twitter"></li>
@@ -157,7 +148,7 @@ class Main extends React.Component {
 										<li className="icon fa-pinterest"></li>
 									</ul>
 								</div>
-							</section>
+							</section> */}
 						</div>
 					</div>
 					<div id="copyright" className="container">

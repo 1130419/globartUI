@@ -493,13 +493,14 @@ $main-color-2: rgba( 34, 97,178,1);
 	.homepage #header-wrapper {
 		padding: 10em 0 6em 0;
 	}
+	
 
 	#footer-wrapper {
 		-webkit-transform: translate3d(0, 0, 0);
 		position: relative;
 		border-top: solid 1px #c2c7cc;
 		padding: 6em 0 6em 0;
-		background-image: url('images/overlay.png'), url('images/footer.svg');
+		background-color: #f2f2f2;
 		background-size: 128px 128px,				100% 100%;
 	}
 
@@ -678,9 +679,14 @@ $main-color-2: rgba( 34, 97,178,1);
 			}
 		}
 
+
 		p {
 			font-size: 1.5em;
 			line-height: 1.5em;
+
+			&:first-child{
+				margin-bottom: 0;
+			}
 		}
 
 		.button {

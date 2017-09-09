@@ -1297,7 +1297,7 @@ table {
   position: relative;
   border-top: solid 1px #c2c7cc;
   padding: 6em 0 6em 0;
-  background-image: url("images/overlay.png"), url("images/footer.svg");
+  background-color: #f2f2f2;
   background-size: 128px 128px,				100% 100%; }
 
 /* Header */
@@ -1428,6 +1428,8 @@ table {
   #hero p {
     font-size: 1.5em;
     line-height: 1.5em; }
+    #hero p:first-child {
+      margin-bottom: 0; }
   #hero .button {
     color: #2261b2;
     background: rgba(255, 255, 255, 0.9);
