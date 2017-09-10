@@ -42,12 +42,12 @@ class Sell extends Component {
 
     render() {
         return (
-            <div className="container">
+            <div className="container" id="sell-form">
                 <form>
                     <div className="form-group">
                         <div className="form-group">
-                            <label htmlFor="typeTransaction">Type of transaction</label>
-                            <select className="form-control" selected = {this.state.typeTransaction} onChange={(event) => this.handleSelectionChange("typeTransaction", event)} id="typeTransaction">
+                            <label htmlFor="exampleFormControlSelect1">Type of transaction</label>
+                            <select className="form-control" id="exampleFormControlSelect1">
                                 <option></option>
                                 <option>Sell</option>
                                 <option>Loan</option>

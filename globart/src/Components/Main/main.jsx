@@ -2,20 +2,25 @@ import React from 'react'
 import ReactDOM from 'react-dom';
 import '../../index';
 import '../../App';
-import NavBar from '../Global/navBar';
 
 class Main extends React.Component {
+
+	constructor(props) {
+		super(props);
+	}
+
+	componentWillMount() {
+		this.props.changeNavbar(true);
+	}
+
+	componentWillUnmount() {
+		this.props.changeNavbar(false);
+	}
+
 	render() {
 		return (
-			<div id="page-wrapper">
+			<div className={ this.props.class}>
 				<div id="header-wrapper">
-					<div id="header" className="container">
-
-						<h1 id="logo"><a href="#">Globart</a></h1>
-						<NavBar></NavBar>
-						
-					</div>
-
 					<section id="hero" className="container">
 						<p><i>"Art washes away from the soul <br />the dust of everyday life"</i></p>
 						<div>Pablo Picasso</div>
@@ -24,41 +29,6 @@ class Main extends React.Component {
 						</ul>
 					</section>
 				</div>
-
-				{/* <div className="wrapper">
-					<div className="container">
-						<div id="root"></div>
-						<div className="row">
-							<section className="6u 12u(narrower) feature">
-								<div className="image-wrapper first">
-									<a href="#" className="image featured first"><img src="images/pic01.jpg" alt="" /></a>
-								</div>
-								<header>
-									<h2>Semper magna neque vel<br /> adipiscing curabitur</h2>
-								</header>
-								<p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur vel sem sit dolor neque semper magna. Lorem
-							ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur vel sem sit.</p>
-								<ul className="actions">
-									<li><a href="#" className="button">Elevate my awareness</a></li>
-								</ul>
-							</section>
-							<section className="6u 12u(narrower) feature">
-								<div className="image-wrapper">
-									<a href="#" className="image featured"><img src="images/pic02.jpg" alt="" /></a>
-								</div>
-								<header>
-									<h2>Amet lorem ipsum dolor<br /> sit consequat magna</h2>
-								</header>
-								<p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur vel sem sit dolor neque semper magna. Lorem
-							ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur vel sem sit.</p>
-								<ul className="actions">
-									<li><a href="#" className="button">Elevate my awareness</a></li>
-								</ul>
-							</section>
-						</div>
-					</div>
-				</div> */}
-
 				<div className="wrapper">
 					<section className="container">
 						<header className="major">
@@ -83,17 +53,13 @@ class Main extends React.Component {
 								</p>
 							</section>
 						</div>
-						{/* <ul className="actions major">
-							<li><a href="#" className="button">Elevate my awareness</a></li>
-						</ul> */}
 					</section>
 				</div>
-
 				<div id="footer-wrapper">
 					<div id="footer" className="container">
 						<header className="major">
 							<h2>Do you still have questions?</h2>
-							<p> If after reading all the explanations you still have doubts, you can always ask. We are happy to help.</p>
+							<p> If after reading all the explanations you still have doubts, you can always ask.<br /> We are happy to help.</p>
 						</header>
 						<div className="row">
 							<section className="12u">
@@ -121,20 +87,6 @@ class Main extends React.Component {
 									</div>
 								</form>
 							</section>
-							{/* <section className="12u hide">
-								<div className="row 0%">
-									<ul className="divided icons 6u 12u(mobile)">
-										<li className="icon fa-twitter"></li>
-										<li className="icon fa-facebook"></li>
-										<li className="icon fa-dribbble"></li>
-									</ul>
-									<ul className="divided icons 6u 12u(mobile)">
-										<li className="icon fa-instagram"></li>
-										<li className="icon fa-youtube"></li>
-										<li className="icon fa-pinterest"></li>
-									</ul>
-								</div>
-							</section> */}
 						</div>
 					</div>
 					<div id="copyright" className="container">

@@ -4,23 +4,23 @@ import { Link } from 'react-router-dom';
 
 
 class NavBar extends React.Component {
+
 	render() {
 		return (
-			<div>
+			<div className={ this.props.class }>
+				<h1 id="logo"><Link to='/'>Globart</Link></h1>
 				<nav id="nav">
 					<ul>
 						<li>
-							<a ><Link to='/sell'>Vendas</Link></a>
+							<Link to='/sell'>Sell</Link>
 						</li>
-						{/* < <li><a href="left-sidebar.html">Left Sidebar</a></li> */}
 						<li className="break">
-							<a ><Link to='/buy'>Comptas</Link></a>
-
+							<Link to='/buy'>Buy</Link>
 						</li>
-						{/* <li><a href="no-sidebar.html">Compras</a></li> */}
 					</ul>
 				</nav>
-			</div>)
+			</div>
+		);
 	}
 }
 
