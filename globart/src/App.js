@@ -11,6 +11,7 @@ import Buy from './Components/Buy/buy';
 
 const App = () => (
     <main>
+        <NavBar></NavBar>
         <Switch>
             <Route exact path='/' component={Home} />
             <Route path='/sell' component={Sell} />

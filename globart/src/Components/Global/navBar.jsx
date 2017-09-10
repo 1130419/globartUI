@@ -7,17 +7,15 @@ class NavBar extends React.Component {
 	render() {
 		return (
 			<div>
+				<h1 id="logo"><a ><Link to='/'>Globart</Link></a></h1>
 				<nav id="nav">
 					<ul>
 						<li>
-							<a ><Link to='/sell'>Vendas</Link></a>
+							<a ><Link to='/sell'>Sell</Link></a>
 						</li>
-						{/* < <li><a href="left-sidebar.html">Left Sidebar</a></li> */}
 						<li className="break">
-							<a ><Link to='/buy'>Comptas</Link></a>
-
+							<a ><Link to='/buy'>Buy</Link></a>
 						</li>
-						{/* <li><a href="no-sidebar.html">Compras</a></li> */}
 					</ul>
 				</nav>
 			</div>)
