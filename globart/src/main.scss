@@ -488,7 +488,7 @@ table {
 
 #logo {
 	position: absolute;
-	z-index: 1;
+	z-index: 2;
 	top: 0;
 	left: 50%;
 	width: 15em;
@@ -519,6 +519,8 @@ table {
 	width: 100%;
 	height: 4em;
 	line-height: 4em;
+	z-index: 1;
+
 	>ul {
 		margin: 0;
 		>li {
@@ -541,6 +543,11 @@ table {
 				-o-transition: border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
 				-ms-transition: border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
 				transition: border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+
+				a {
+					cursor: pointer;
+					border: none;
+				}
 			}
 			&.active {
 				>span,
@@ -1336,4 +1343,24 @@ button,
 
 #footer form > div:not(:last-child){
 	margin-bottom: 10px !important;
+}
+
+#sell-form {
+	
+	position: relative;
+
+	> form {
+		position: absolute;
+		top: 85px;
+		margin-bottom: 25px;
+	}
+
+}
+
+#nav {
+	background-color: $main-color-primary;
+}
+
+.home-page #nav{
+	background-color: transparent;
 }

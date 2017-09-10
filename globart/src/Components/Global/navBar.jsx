@@ -4,21 +4,23 @@ import { Link } from 'react-router-dom';
 
 
 class NavBar extends React.Component {
+
 	render() {
 		return (
-			<div>
-				<h1 id="logo"><a ><Link to='/'>Globart</Link></a></h1>
+			<div className={ this.props.class }>
+				<h1 id="logo"><Link to='/'>Globart</Link></h1>
 				<nav id="nav">
 					<ul>
 						<li>
-							<a ><Link to='/sell'>Sell</Link></a>
+							<Link to='/sell'>Sell</Link>
 						</li>
 						<li className="break">
-							<a ><Link to='/buy'>Buy</Link></a>
+							<Link to='/buy'>Buy</Link>
 						</li>
 					</ul>
 				</nav>
-			</div>)
+			</div>
+		);
 	}
 }
 
