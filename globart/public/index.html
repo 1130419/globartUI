@@ -5,69 +5,86 @@
 	<title>Globart</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Art exchange" />
+
 	<link rel="manifest" href="%PUBLIC_URL%/manifest.json">
 </head>
 
 <body class="homepage">
-		<div id="page-wrapper">
-			<div id="header-wrapper">
-				<div id="header" class="container">
-					<NavBar></NavBar>
-				</div>
-
-				<section id="hero" class="container">
-					<p><i>"Art washes away from the soul <br />the dust of everyday life"</i></p>
-					<div>Pablo Picasso</div>
-					<ul class="actions">
-						<li><a href="#" class="button">Show me art</a></li>
-					</ul>
-				</section>
+	<div id="page-wrapper">
+		<div id="header-wrapper">
+			<div id="header" class="container">
+				<NavBar></NavBar>
 			</div>
 
-			<div id="root"></div>
+			<section id="hero" class="container">
+				<p><i>"Art washes away from the soul <br />the dust of everyday life"</i></p>
+				<div>Pablo Picasso</div>
+				<ul class="actions">
+					<li><a href="#" class="button">Show me art</a></li>
+				</ul>
+			</section>
+		</div>
 
-			<div id="footer-wrapper">
-				<div id="footer" class="container">
-					<header class="major">
-						<h2>Do you still have questions?</h2>
-						<p> If after reading all the explanations you still have doubts, you can always ask. We are happy to help.</p>
-					</header>
-					<div class="row">
-						<section class="12u">
-							<form method="post" action="#">
-								<div class="row 50%">
-									<div class="6u 12u(mobile)">
-										<input name="name" placeholder="Name" type="text" />
-									</div>
-									<div class="6u 12u(mobile)">
-										<input name="email" placeholder="Email" type="text" />
-									</div>
+		<div id="root"></div>
+
+		<div id="footer-wrapper">
+			<div id="footer" class="container">
+				<header class="major">
+					<h2>Do you still have questions?</h2>
+					<p> If after reading all the explanations you still have doubts, you can always ask. We are happy to help.</p>
+				</header>
+				<div class="row">
+					<section class="12u">
+						<form method="post" action="#">
+							<div class="row 50%">
+								<div class="6u 12u(mobile)">
+									<input name="name" placeholder="Name" type="text" />
 								</div>
-								<div class="row 50%">
-									<div class="12u">
-										<textarea name="message" placeholder="Message"></textarea>
-									</div>
+								<div class="6u 12u(mobile)">
+									<input name="email" placeholder="Email" type="text" />
 								</div>
-								<div class="row 50%">
-									<div class="12u">
-										<ul class="actions text-center">
-											<li><input type="submit" value="Send Message" /></li>
-											<li><input type="reset" value="Clean" /></li>
-										</ul>
-									</div>
+							</div>
+							<div class="row 50%">
+								<div class="12u">
+									<textarea name="message" placeholder="Message"></textarea>
 								</div>
-							</form>
-						</section>
-					</div>
+							</div>
+							<div class="row 50%">
+								<div class="12u">
+									<ul class="actions text-center">
+										<li><input type="submit" value="Send Message" /></li>
+										<li><input type="reset" value="Clean" /></li>
+									</ul>
+								</div>
+							</div>
+						</form>
+					</section>
 				</div>
-				<div id="copyright" class="container">
-					<ul class="menu">
-						<li>&copy; Globart. All rights reserved.</li>
-					</ul>
-				</div>
+			</div>
+			<div id="copyright" class="container">
+				<ul class="menu">
+					<li>&copy; Globart. All rights reserved.</li>
+				</ul>
 			</div>
 		</div>
 	</div>
+	<script>
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-93091438-2', 'auto');
+		ga('send', 'pageview');
+	</script>
 </body>
 
 </html>
